@@ -1,9 +1,10 @@
-export default function Main() {
+export default function Main(props) {
+  const { data } = props;
   return (
     <div className="imgContainer">
       <img
-        src="pillars-of-creation.jpg"
-        alt="photo of the pillars of creation taken by the hubble telescope"
+        src={data.hdurl}
+        alt={data?.title || "backgound image"}
         className="bgImage"
       />
     </div>

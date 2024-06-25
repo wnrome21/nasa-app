@@ -147,15 +147,17 @@ footer button:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding-top: 10px;
 }
 
 .descriptionTitle {
   font-size: 1.1rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .loadingState {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1;
@@ -165,6 +167,7 @@ footer button:hover {
   opacity: 0.2;
   font-size: 3rem;
   animation: spin 1s linear infinite;
+  padding: 1rem;
 }
 
 @keyframes spin {
@@ -176,7 +179,6 @@ footer button:hover {
     transform: rotate(360deg);
   }
 }
-
 
 @media (min-width: 640px) {
   .sidebar {
